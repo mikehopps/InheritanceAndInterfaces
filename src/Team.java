@@ -4,10 +4,12 @@
 public class Team implements Quantifiable{
 
     private int wins, losses;
+    private String name;
 
-    public Team(int wins, int losses) {
+    public Team(String name, int wins, int losses) {
         this.wins = wins;
         this.losses = losses;
+        this.name = name;
     }
 
     /*
@@ -16,5 +18,9 @@ public class Team implements Quantifiable{
     @Override
     public double getValue() {
         return (double)wins/(wins + losses);
+    }
+
+    public String getName() {
+        return name;
     }
 }
