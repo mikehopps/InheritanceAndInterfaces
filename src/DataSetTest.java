@@ -1,3 +1,4 @@
+import javax.xml.crypto.Data;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -8,7 +9,7 @@ public class DataSetTest {
     public static void main(String[] args) {
 
         //Books:
-        ArrayList<Book> books = new ArrayList<>();
+        DataSet books = new DataSet();
         books.add(new Book(221, "The Great Gatsby"));
         books.add(new Book(183, "Of Mice and Men"));
         books.add(new Book(369, "The Martian"));
@@ -16,7 +17,7 @@ public class DataSetTest {
 
 
         //Rocks:
-        ArrayList<Rock> rocks = new ArrayList<>();
+        DataSet rocks = new DataSet();
         for (int i = 0; i < 20; i++) {
             double weight = (int)((Math.random()*20 + 3)*100)/100.0;  //only wanted 2 decimals
             rocks.add(new Rock(weight));
@@ -24,7 +25,7 @@ public class DataSetTest {
 
 
         //Teams:
-        ArrayList<Team> teams = new ArrayList<>();
+        DataSet teams = new DataSet();
         teams.add(new Team("Lightning", 29, 8));
         teams.add(new Team("Bruins", 22, 10));
         teams.add(new Team("Leafs", 23, 16));

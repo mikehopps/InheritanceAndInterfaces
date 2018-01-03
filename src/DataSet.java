@@ -11,7 +11,7 @@ public class DataSet {
         set = new ArrayList<>();
     }
 
-    public void addItem(Quantifiable newItem){
+    public void add(Quantifiable newItem){
         set.add(newItem);
     }
 
